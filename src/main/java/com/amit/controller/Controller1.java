@@ -17,7 +17,7 @@ public class Controller1 {
 	
 	
 
-	@PostMapping("/{message}")
+	@GetMapping("/{message}")
 	public String greet(@PathVariable String message) {
 		return "Welcome: "+message;
 	}
